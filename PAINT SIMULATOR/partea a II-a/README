@@ -1,0 +1,38 @@
+Pirciulescu Valentina 313 CD
+
+Am citit din fisierul "input.txt" numele imagini, thresholdul si numele 
+fisierului bin cu ajutorul functiei fscanf.
+Imaginea am citit-o cu ajutorul functiei fwrite.
+
+TASK 1
+Am format numele noii imagini cu ajutorul functiilor strtok (am pastrat numele
+pana la .) si strcat (am adaugat "_black_white.bmp).
+Am scris in fisierul output_filename mai intai cele doua structurii, dupa am 
+mutat pointerul cu functia fseek.
+Intr-un for am construi imaginea alb-negru cu ajutorul unei variabile de
+tip int (s).
+Am scris noua imagine in fisierul output_filename folosind functia fwrite.
+
+TASK 2
+Am declarat si am initializat cele trei filtre in matricile Funu, Fdoi si Frei.
+Am construit o functie care primeste ca argumente numele filtrului aplicat,
+imaginea si dimensiunile.
+Am format numele noilor imagini ca la taskul 1.
+Pentru a evita lipsa vecinilor am folosit o imagine auxiliara (img_aux)
+pe care am bordat-o cu 0 si am initializat-o cu imaginea actuala, dar cu
+coordonatele pornind din 1,1 pana la infoh.height, infoh.width.
+Am aplicat pe rand fiecare filtru, iar apoi am scris imaginile in fiserele
+"nume.imagine_F1.bmp", "nume.imagine_F2.bmp", respectiv "nume.imagine_F2.bmp"
+in mod similar taskului 1.
+
+TASK 4
+Am aflat dimensiune fisierului cu ajutorul functiilor fseek si ftell,
+apoi am scazut dimensiunea headerului pentru a afla cat ocupa efectiv
+compresia imaginii.
+Pentru a citi fisierul binar am folosit 3 structuri, bmp_fileheader,
+bmp_infoheader si compressed (nr_linie, nr_coloana, r, g, b).
+Am folosit o matrice de adiacenta pentru a marca pixeli care au fost trecuti
+din fiserul .bin in matrice. Pozitiile care nu fusesera initializate primeau
+valoarea pixelului vecin.
+Am scris imaginea in fisierul "decompressed.bmp" similar taskului 1.
+
