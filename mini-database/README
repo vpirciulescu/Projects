@@ -1,0 +1,67 @@
+PIRCIULESCU VALENTINA - 323CD
+
+	TEMA 1 - MINI DATABASE				
+
+Detalii privind implementarea bazei de date:
+
+Baza de date a fost implementata ca o lista de liste, astfel:
+ --> prima lista contine numele tabelelor din baza de date
+ --> a doua lista contine primul tabel
+ .
+ .
+ . 
+ --> a n+1 lista contine tabelul n
+
+
+De asemenea, un tabel este reprezentat de o lista de liste
+ --> primul element din lista reprezinta numele tabelei
+ --> al doilea element (lista) reprezinta numele coloanelor
+ --> al treilea element (lista) prima coloana (primul element = numele coloanei)
+ .
+ .
+ .
+ -->al n+2 element (lista) este a n-a coloana a tabelei
+
+
+ =======================================================================
+|								      	|
+|  (Nume_tabela1,  Nume_tabela2	. ...	, Nume_tabela n)	        |	
+|									|
+|-----------------------------------------------------------------------|								
+|									|
+|									|
+| ((nume_tabela1, (nume_col1, nume_col2, ..., nume_col n) 		|					
+| (nume_col1, ...) ... (nume_col n, ...))				|				      	
+|									|
+|									|
+|									|
+|-----------------------------------------------------------------------|								
+|								      	|
+| ((nume_tabela2	(nume_col1, nume_col2, ..., nume_col n) 	|						
+| (nume_col1, ...) ... (nume_col n, ...))				|							
+|									|
+|									|
+|-----------------------------------------------------------------------|							
+|								      	|
+|									|
+|									|
+|				.					|
+|				.					|			
+|				.					|		      		
+|									|
+|									|
+|									|
+|									|
+|								      	|
+|-----------------------------------------------------------------------|									
+|								      	|
+| ((nume_tabela n (nume_col1, nume_col2, ..., nume_col n) 		|					
+| (nume_col1, ...) ... (nume_col n, ...))				|					
+|									|
+|									|
+|									|
+ =======================================================================
+
+
+
+

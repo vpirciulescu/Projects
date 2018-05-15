@@ -1,0 +1,59 @@
+07/12/2017 23:00:44 
+PIRCIULESCU VALENTINA --> 323 CD
+
+*cu ajutorul functiei strstr calculez pozitia stringului corespunzator taskului
+*pastrez stringul pe stiva de fiecare data cand apelez o functie (push -- pop)
+
+TASK 1
+-aflu lungimea primului string  
+-str1 = str2
+-apelez functia "xor_strings" care are ca parametri stringul si cheia 
+-fac diferenta intre pozitiile celor doua siruri pt a afla pe cati trebuie sa
+fac xor (puteam sa fac si cu strlen)
+-make_xor: xor intre bytes
+
+TASK 2
+-pozitionez la inceputul stringului 3
+-apelez functia "rolling_xor"
+	-rollin_xor: 
+		*aflu lungimea stringului
+		*make_ror: xor intr byteul i si i-1, i porneste de la strlen(str3)
+
+TASK 3
+-pozitionez la inceputul stringului 4
+-str5 = *(str4 + strlen(str4))
+-apelez functia "xor_hex_strings" care are parametrii str4 si str5
+-transform din hex in dec cate doi bytes (12 --> 18; 5a --> 70)
+-apoi fac xor intre cei doi bytes
+
+TASK 4
+-pozitionez la inceputul stringului 6
+-calculez lungimea si o pastrez pe stiva (imi trebuie pentru taskul 5 pentru ca
+lungimea stringului initial difera de lungimea stringului final)
+-apelez functia "base32decode" care primeste ca parametru stringul 6
+	-replace_lit_code
+		*inlocuiesc litere si cifrele cu codul din tabel
+		*egal este inlocuit cu (null)
+	-dupa ce am terminat de inlocuit fac make_shift
+	 *in make_shift calculez cate 5 caractere folosind cate 8 bytes din string
+	 *ch1 = 12345123 (fol primul si al II-lea byte)
+	 *ch2 = 45123451 (fol al II-lea, al III-lea byte si al IV-lea byte)
+	 *ch2 = 23451234 (fol al IV-lea si al V-lea byte)
+	 *ch3 = 51234512 (fol al V-lea ,al VI-lea byte si al VII-lea byte)
+     *ch4 = 34512345 (fol al VII-lea si al VIII-lea byte)
+
+TASK 5
+-pozitionez la inceputul stringului 7
+-apelez functia "bruteforce_singlebyte_xor"
+-calculez stringul rezultat in urma aplicarii lui xor pe fiecare byte cu o cheie
+care ia valori de la 1 la 255, daca stringul contine "force"(hint) ma opresc
+-verific daca stringul contine "force" cu ajutorul functiei "strstr"
+
+TASK 6
+-ma pozitionez la inceputul stringului 8
+-cu ajutorul programelului "decode.c" am dedus tabela de substitutie
+-tabela am memorat-o in variabila "tabela"
+-apelez functia "break_substitution" care are ca parametrii tabela si stringul
+pe care fac subsitutia
+-caut caracterul pe care vreau sa-l inlocuiesc pe pozitiile impare, il gasesc
+si il inlocuiesc

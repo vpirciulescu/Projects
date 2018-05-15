@@ -1,0 +1,105 @@
+### PIRCIULESCU VALENTINA ###
+
+	DESCRIERE PROIECTE
+	
+	C
+	
+1. PAINT SIMULATOR
+	Partea I
+ Sa se implementeze funcționalitățile de bază ale unui editor simplu de imagini.
+ Cerinte 
+ 	Inițializare pornind de la o imagine existentă
+ 	Crop
+ 	Resize
+ 	Colorează regiunea
+ 	Blur
+ 	Rotație
+ 	Fill
+ 	Print
+ 	Exit
+
+	Partea a II-a
+ Procesarea imaginii
+ Task 1
+	Acest task presupune transformarea unei imagini color intr-o imagine alb-negru. 
+ Task 2
+	In cadrul acestui task va trebui sa aplicati anumite filtre pe o imagine.
+ Task 3
+	Se da un fisier binar (imagine comprimata). Sa se aplice algoritmul de decompresie.
+
+2. ONLINE STORE ENGINE
+	
+	Implementarea functionalitatilor unui dictionar folosind un arbore AVL in care nodurile aveau
+asociate cate o lista dubla inlantuita.
+
+___________________________________________________________________________________________________
+
+	* JAVA *
+
+1. LEAGUE OF OOP
+
+	Suntem într-un joc MMO-style. Eroii noștri își petrec viața într-un univers 2D, pe care îl 
+explorează și în care se dezvoltă.
+	După cum este cunoscut din jocurile MMO și RPG, personajele noastre sunt diverse. Fiecare 
+aparține unei anumite clase și are un anumit set de abilități la care se pricepe cel mai bine și 
+pe care le poate dezvolta cel mai repede; le vom analiza în detaliu mai jos.
+	La începutul jocului, eroii noștri sunt plasați pe hartă în locuri bine definite. Apoi vor 
+exista runde de durată unitate, în care toți eroii vor executa câte o anumită mișcare 
+(bine definită) pe hartă.
+	Când doi eroi ajung în același loc, ei se vor lupta. În această rundă, fiecare erou combatant 
+își va folosi toate abilitățile disponibile împotriva adversarului, o singură dată. După luptă, ei 
+își vor vedea de drum începând de runda următoare.
+	La sfârșitul jocului (un număr stabilit de runde, cu locații inițiale și mișcări stabilite), 
+programul nostru se va uita la eroii rămași în viață.
+
+
+2. MINI CAD
+
+	CAD (Computer-Aided Design sau Computer-Aided Design and Drafting) reprezintă utilizarea 
+tehnologiei pentru crearea unor designuri (în general 2D) și înlocuiește procesul de desenare 
+manuală a unei piese cu unul automatizat. Unul dintre cele mai cunoscute astfel de programe este 
+AutoCAD. Astfel de programe îmbunătățesc calitatea design-ului și productivitatea designer-ului. 
+	Programul MiniCAD pe care urmează sa îl implementați va respecta principiile unui software CAD 
+utilizat în viața de zi cu zi de către mii de companii și va putea produce forme geometrice diverse,
+în diferite poziții și în diferite culori. Pentru simplitate, nu va trebui sa implementați o 
+interfață grafică pentru a realiza asta, ci doar să vă folosiți de cunoștințele acumulate în cadrul
+materiei și de câteva alte noțiuni adiționale simple. 
+
+___________________________________________________________________________________________________
+
+	* RACKET *
+
+MINI DATABASE
+	Tema va avea ca scop dezvoltarea unui sistem minimalist de management al unei baze de date, 
+folosind paradigma funcțională. Acest sistem va permite crearea și ștergerea tabelelor, precum și 
+efectuarea operațiilor elementare asupra acestora: insert, select, update și delete.
+
+___________________________________________________________________________________________________
+	
+	* HASKELL *
+
+GAME ABOUT SQUARES
+	Tema urmărește implementarea jocului Game about Squares, și a unui mecanism de rezolvare a 
+oricărui nivel, utilizând căutare leneșă în spațiul stărilor. În acest sens, se va întrebuința o 
+versiune specială a parcurgerii în adâncime, numită adâncire iterativă. 
+
+___________________________________________________________________________________________________
+	
+	* ASSEMBLY *
+ 	
+DECRYPTING MESSAGES
+Enunț
+	Să se implementeze un program care decodează o serie de șiruri codificate prin diferite metode 
+criptografice.
+	Task 1
+XOR între două șiruri de octeți
+	Task 2
+Rolling XOR
+	Task 3
+XOR între două șiruri reprezentate prin caractere hexazecimale
+	Task 4
+Decodificarea unui șir în reprezentare base32
+	Task 5
+Bruteforce pe XOR cu cheie de un octet
+	Task 6
+Decriptarea unui cifru de substituție

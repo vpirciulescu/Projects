@@ -1,0 +1,7 @@
+build:
+	javac minicad/*.java
+	javac -g Main.java
+
+clean:
+	rm *.class
+	rm minicad/*.class
