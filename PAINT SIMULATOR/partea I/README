@@ -1,0 +1,43 @@
+// Pirciulescu Valentina 313CD
+
+	Initizializare pornind de la o imagine existenta
+Taskul a fost realizat cu ajutorul functiilor "alocare" si 
+"initializare_imagine". 
+Functia "initiaizare_imagine" inlocuieste imaginea existenta si pe masura ce este citita, 
+valorile sunt verificare astfel incat valoarea unui pixel sa fie cuprinsa intre 0 si 255.
+	Crop
+Am translatat matricea spre coltul din stanga, sus si apoi am realocat matricea
+ cu noile dimensiuni (new_height, new_width), eliminand astfel valorile in plus.
+	Resize
+Initial este facuta operatia de crop, iar apoi in functie de noile dimensiuni 
+ale matricei adaug pixelul alb (255,255,255). Astfel exista trei cazuri:
+1.new_height > height si new_width < width (se completeaza cu pixeli albi
+liniile de la height la new_height)
+2.new_height > height si new_width > width (se completeaza cu pixeli albi 
+liniile de la height la new_height si coloanele de la width la new_width)
+3.new_height < height si new_width > width (se completeaza cu pixeli albi
+coloanele de a width la new_width)
+	Coloreaza regiunea
+Am inlocuit pixelii din suprafata delimitata de (start_line, start_col) si 
+(end_line, end_col) cu pixelul (R, G, B).
+	Blur
+Am folosit o functie de tipul structurii (mat) definite la inceputul programului
+in care am alocat memorie pentru o matrice auxiliara in care se realizeaza 
+"blurarea".Tinand cont de pozitia fiecarui pixel (colt, margine, centru) am 
+calculat suma vecinilor si numarul acestora (2,3 sau 4), iar apoi am impartit 
+numarul de vicini. Apelul functie se face din main, matricea veche fiind 
+inlocuita de matricea nou formata.
+	Rotatie
+Pentru realizarea rotirii am folosit o matrice auxiliara careia i-am atribuit
+transpusa matricei initiale, iar apoi am realizat interschimbarea pe linii.
+Am folosit realloc pentru schimbarea dimensiunilor matricei initiale, iar pentru
+alocarea dimensiunii matricei auxiliare am definit o functie "alocare_aux".
+	Fill
+Operatia de suprascriere a tuturor vecinilor accesibili si de aceiasi culoare
+dintr-un punct dat a fost realizata cu ajutorul unei functii recursive (fill)
+de tip void. Astfel daca pixelul avea aceiasi culoare ca cel initial ii erau
+verificati toti vecini existenti (sus, jos, stanga, dreapta).
+	Mesaje de eroare
+Pentru mesajele de eroare am definit o functie de tip void cu un singur 
+parametru care afiseaza codul respectiv fiecarei erori. Codul fiecarei erori
+este definit global.
