@@ -1,4 +1,4 @@
-~ PÎRCIULESCU VALENTINA - 323 CD ~
+~ PÃŽRCIULESCU VALENTINA - 323 CD ~
 
 main - Main
 joc - Fight
@@ -30,7 +30,7 @@ joc - Fight
 - metoda "trei" calculeaza damageul dat de prima abilitate fara race modf
 - metoda "patru" calculeaza damageul dat de a doua abilitate fara race modf
 
-   Knight, Pyromancer, Rogue si Wizard contine implementarea celor 4 metode in functie
+   Clasele Knight, Pyromancer, Rogue si Wizard contin implementarea celor 4 metode in functie
 de abilitatile fiecarui erou.
 
 
